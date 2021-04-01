@@ -1,4 +1,4 @@
-import { IChainData } from './types';
+import { IChainData } from './types'
 
 export const chains: IChainData[] = [
   {
@@ -13,10 +13,11 @@ export const chains: IChainData[] = [
       'https://mainnet.infura.io/v3/${INFURA_API_KEY}',
       'wss://mainnet.infura.io/ws/v3/${INFURA_API_KEY}',
       'https://api.mycryptoapi.com/eth',
-      'https://cloudflare-eth.com',
+      'https://cloudflare-eth.com'
     ],
     faucets: [],
     infoURL: 'https://ethereum.org',
+    blockExplorerUrls: ['https://etherscan.io']
   },
   {
     name: 'xDAI Chain',
@@ -33,10 +34,11 @@ export const chains: IChainData[] = [
       'wss://xdai.poanetwork.dev/wss',
       'http://xdai.poanetwork.dev',
       'https://dai.poa.network',
-      'ws://xdai.poanetwork.dev:8546',
+      'ws://xdai.poanetwork.dev:8546'
     ],
     faucets: [],
     infoURL: 'https://forum.poa.network/c/xdai-chain',
+    blockExplorerUrls: ['https://blockscout.com/xdai/mainnet']
   },
   {
     name: 'EtherInc',
@@ -49,6 +51,7 @@ export const chains: IChainData[] = [
     rpc: ['https://api.einc.io/jsonrpc/mainnet'],
     faucets: [],
     infoURL: 'https://einc.io',
+    blockExplorerUrls: []
   },
   {
     name: 'ThunderCore Mainnet',
@@ -60,11 +63,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'ThunderCore Mainnet Ether',
       symbol: 'TT',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://mainnet-rpc.thundercore.com'],
     faucets: ['https://faucet.thundercore.com'],
     infoURL: 'https://thundercore.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Metadium Mainnet',
@@ -76,11 +80,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Metadium Mainnet Ether',
       symbol: 'META',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://api.metadium.com/prod'],
     faucets: [],
     infoURL: 'https://metadium.com',
+    blockExplorerUrls: []
   },
   {
     name: 'IPOS Network',
@@ -92,11 +97,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'IPOS Network Ether',
       symbol: 'IPOS',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://rpc.iposlab.com', 'https://rpc2.iposlab.com'],
     faucets: [],
     infoURL: 'https://iposlab.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Metadium Testnet',
@@ -108,11 +114,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Metadium Testnet Ether',
       symbol: 'KAL',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://api.metadium.com/dev'],
     faucets: [],
     infoURL: 'https://metadium.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Fuse Mainnet',
@@ -125,6 +132,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.fuse.io'],
     faucets: [],
     infoURL: 'https://fuse.io/',
+    blockExplorerUrls: []
   },
   {
     name: 'Diode Staging',
@@ -137,6 +145,7 @@ export const chains: IChainData[] = [
     rpc: ['https://staging.diode.io:8443/', 'wss://staging.diode.io:8443/ws'],
     faucets: [],
     infoURL: 'https://diode.io/staging',
+    blockExplorerUrls: []
   },
   {
     name: 'Ether-1',
@@ -149,6 +158,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.ether1.org'],
     faucets: [],
     infoURL: 'https://ether1.org',
+    blockExplorerUrls: []
   },
   {
     name: 'NEAR MainNet',
@@ -161,6 +171,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.mainnet.near.org'],
     faucets: [],
     infoURL: 'https://near.org/',
+    blockExplorerUrls: []
   },
   {
     name: 'NEAR TestNet',
@@ -173,6 +184,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.testnet.near.org'],
     faucets: ['https://wallet.testnet.near.org'],
     infoURL: 'https://near.org/',
+    blockExplorerUrls: []
   },
   {
     name: 'Xerom',
@@ -185,6 +197,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.xerom.org'],
     faucets: [],
     infoURL: 'https://xerom.org',
+    blockExplorerUrls: []
   },
   {
     name: 'PepChain Churchill',
@@ -196,11 +209,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'PepChain Churchill Ether',
       symbol: 'TPEP',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://churchill-rpc.pepchain.io'],
     faucets: [],
     infoURL: 'https://pepchain.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Matic Mainnet',
@@ -210,12 +224,10 @@ export const chains: IChainData[] = [
     network: 'mainnet',
     networkId: 137,
     nativeCurrency: { name: 'Matic', symbol: 'MATIC', decimals: 18 },
-    rpc: [
-      'https://rpc-mainnet.matic.network',
-      'wss://ws-mainnet.matic.network',
-    ],
+    rpc: ['https://rpc-mainnet.matic.network', 'wss://ws-mainnet.matic.network'],
     faucets: [],
     infoURL: 'https://matic.network/',
+    blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com']
   },
   {
     name: 'Diode Prenet',
@@ -228,6 +240,7 @@ export const chains: IChainData[] = [
     rpc: ['https://prenet.diode.io:8443/', 'wss://prenet.diode.io:8443/ws'],
     faucets: [],
     infoURL: 'https://diode.io/prenet',
+    blockExplorerUrls: []
   },
   {
     name: 'Lightstreams Testnet',
@@ -240,6 +253,7 @@ export const chains: IChainData[] = [
     rpc: ['https://node.sirius.lightstreams.io'],
     faucets: ['https://discuss.lightstreams.network/t/request-test-tokens'],
     infoURL: 'https://explorer.sirius.lightstreams.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Atheios',
@@ -252,6 +266,7 @@ export const chains: IChainData[] = [
     rpc: ['https://wallet.atheios.com:8797'],
     faucets: [],
     infoURL: 'https://atheios.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Lightstreams Mainnet',
@@ -264,6 +279,7 @@ export const chains: IChainData[] = [
     rpc: ['https://node.mainnet.lightstreams.io'],
     faucets: [],
     infoURL: 'https://explorer.lightstreams.io',
+    blockExplorerUrls: []
   },
   {
     name: 'ThunderCore Testnet',
@@ -275,11 +291,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'ThunderCore Testnet Ether',
       symbol: 'TST',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://testnet-rpc.thundercore.com'],
     faucets: ['https://faucet-testnet.thundercore.com'],
     infoURL: 'https://thundercore.com',
+    blockExplorerUrls: []
   },
   {
     name: 'IOLite',
@@ -292,6 +309,7 @@ export const chains: IChainData[] = [
     rpc: ['https://net.iolite.io'],
     faucets: [],
     infoURL: 'https://iolite.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Teslafunds',
@@ -304,6 +322,7 @@ export const chains: IChainData[] = [
     rpc: ['https://tsfapi.europool.me'],
     faucets: [],
     infoURL: 'https://teslafunds.io',
+    blockExplorerUrls: []
   },
   {
     name: 'EtherGem',
@@ -316,6 +335,7 @@ export const chains: IChainData[] = [
     rpc: ['https://jsonrpc.egem.io/custom'],
     faucets: [],
     infoURL: 'https://egem.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Expanse Network',
@@ -327,11 +347,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Expanse Network Ether',
       symbol: 'EXP',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://node.expanse.tech'],
     faucets: [],
     infoURL: 'https://expanse.tech',
+    blockExplorerUrls: []
   },
   {
     name: 'ELA-ETH-Sidechain Mainnet',
@@ -344,6 +365,7 @@ export const chains: IChainData[] = [
     rpc: ['https://mainrpc.elaeth.io'],
     faucets: [],
     infoURL: 'https://www.elastos.org/',
+    blockExplorerUrls: []
   },
   {
     name: 'Akaroma',
@@ -356,6 +378,7 @@ export const chains: IChainData[] = [
     rpc: ['https://remote.akroma.io'],
     faucets: [],
     infoURL: 'https://akroma.io',
+    blockExplorerUrls: []
   },
   {
     name: 'ELA-ETH-Sidechain Testnet',
@@ -368,6 +391,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.elaeth.io'],
     faucets: ['https://faucet.elaeth.io/'],
     infoURL: 'https://elaeth.io/',
+    blockExplorerUrls: []
   },
   {
     name: 'Freight Trust Network',
@@ -379,14 +403,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Freight Trust Native',
       symbol: '0xF',
-      decimals: 18,
+      decimals: 18
     },
-    rpc: [
-      'http://13.57.207.168:3435',
-      'https://app.freighttrust.net/ftn/${API_KEY}',
-    ],
+    rpc: ['http://13.57.207.168:3435', 'https://app.freighttrust.net/ftn/${API_KEY}'],
     faucets: ['http://faucet.freight.sh'],
     infoURL: 'https://freighttrust.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Webchain',
@@ -399,6 +421,7 @@ export const chains: IChainData[] = [
     rpc: ['https://node1.webchain.network'],
     faucets: [],
     infoURL: 'https://webchain.network',
+    blockExplorerUrls: []
   },
   {
     name: 'Energy Web Chain',
@@ -411,6 +434,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.energyweb.org', 'wss://rpc.energyweb.org/ws'],
     faucets: [],
     infoURL: 'https://energyweb.org',
+    blockExplorerUrls: []
   },
   {
     name: 'ARTIS sigma1',
@@ -423,6 +447,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.sigma1.artis.network'],
     faucets: [],
     infoURL: 'https://artis.eco',
+    blockExplorerUrls: []
   },
   {
     name: 'ARTIS tau1',
@@ -435,6 +460,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.tau1.artis.network'],
     faucets: [],
     infoURL: 'https://artis.network',
+    blockExplorerUrls: []
   },
   {
     name: 'Fantom Opera',
@@ -447,6 +473,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.fantom.network', 'https://fantomscan.io/rpc'],
     faucets: [],
     infoURL: 'https://fantom.foundation',
+    blockExplorerUrls: []
   },
   {
     name: 'High Performance Blockchain',
@@ -458,11 +485,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'High Performance Blockchain Ether',
       symbol: 'HPB',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://node.hpb.blue'],
     faucets: [],
     infoURL: 'https://hpb.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Auxilium Network Mainnet',
@@ -475,6 +503,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.auxilium.global'],
     faucets: [],
     infoURL: 'https://auxilium.global',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethereum Testnet Ropsten',
@@ -486,10 +515,11 @@ export const chains: IChainData[] = [
     nativeCurrency: { name: 'Ropsten Ether', symbol: 'ROP', decimals: 18 },
     rpc: [
       'https://ropsten.infura.io/v3/${INFURA_API_KEY}',
-      'wss://ropsten.infura.io/ws/v3/${INFURA_API_KEY}',
+      'wss://ropsten.infura.io/ws/v3/${INFURA_API_KEY}'
     ],
     faucets: ['https://faucet.ropsten.be?${ADDRESS}'],
     infoURL: 'https://github.com/ethereum/ropsten',
+    blockExplorerUrls: ['https://ropsten.etherscan.io']
   },
   {
     name: 'RSK Mainnet',
@@ -502,6 +532,7 @@ export const chains: IChainData[] = [
     rpc: ['https://public-node.rsk.co', 'https://mycrypto.rsk.co'],
     faucets: [],
     infoURL: 'https://rsk.co',
+    blockExplorerUrls: []
   },
   {
     name: 'RSK Testnet',
@@ -511,12 +542,10 @@ export const chains: IChainData[] = [
     network: 'testnet',
     networkId: 31,
     nativeCurrency: { name: 'RSK Testnet Ether', symbol: 'TRSK', decimals: 18 },
-    rpc: [
-      'https://public-node.testnet.rsk.co',
-      'https://mycrypto.testnet.rsk.co',
-    ],
+    rpc: ['https://public-node.testnet.rsk.co', 'https://mycrypto.testnet.rsk.co'],
     faucets: ['https://faucet.testnet.rsk.co'],
     infoURL: 'https://rsk.co',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethersocial Network',
@@ -528,11 +557,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Ethersocial Network Ether',
       symbol: 'ESN',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://api.esn.gonspool.com'],
     faucets: [],
     infoURL: 'https://ethersocial.org',
+    blockExplorerUrls: []
   },
   {
     name: 'Pirl',
@@ -545,6 +575,7 @@ export const chains: IChainData[] = [
     rpc: ['https://wallrpc.pirl.io'],
     faucets: [],
     infoURL: 'https://pirl.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Valorbit',
@@ -557,6 +588,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.valorbit.com/v2'],
     faucets: [],
     infoURL: 'https://valorbit.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Lisinski',
@@ -568,11 +600,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Lisinski Ether',
       symbol: 'LISINSKI',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://rpc-bitfalls1.lisinski.online'],
     faucets: ['https://pipa.lisinski.online'],
     infoURL: 'https://lisinski.online',
+    blockExplorerUrls: []
   },
   {
     name: 'Energi Mainnet',
@@ -585,6 +618,7 @@ export const chains: IChainData[] = [
     rpc: ['https://nodeapi.gen3.energi.network'],
     faucets: [],
     infoURL: 'https://www.energi.world/',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethereum Testnet Rinkeby',
@@ -596,10 +630,11 @@ export const chains: IChainData[] = [
     nativeCurrency: { name: 'Rinkeby Ether', symbol: 'RIN', decimals: 18 },
     rpc: [
       'https://rinkeby.infura.io/v3/${INFURA_API_KEY}',
-      'wss://rinkeby.infura.io/ws/v3/${INFURA_API_KEY}',
+      'wss://rinkeby.infura.io/ws/v3/${INFURA_API_KEY}'
     ],
     faucets: ['https://faucet.rinkeby.io'],
     infoURL: 'https://www.rinkeby.io',
+    blockExplorerUrls: ['https://rinkeby.etherscan.io']
   },
   {
     name: 'Ethereum Testnet Kovan',
@@ -614,13 +649,11 @@ export const chains: IChainData[] = [
       'http://kovan.poa.network:8545',
       'https://kovan.infura.io/v3/${INFURA_API_KEY}',
       'wss://kovan.infura.io/ws/v3/${INFURA_API_KEY}',
-      'ws://kovan.poa.network:8546',
+      'ws://kovan.poa.network:8546'
     ],
-    faucets: [
-      'https://faucet.kovan.network',
-      'https://gitter.im/kovan-testnet/faucet',
-    ],
+    faucets: ['https://faucet.kovan.network', 'https://gitter.im/kovan-testnet/faucet'],
     infoURL: 'https://kovan-testnet.github.io/website',
+    blockExplorerUrls: ['https://kovan.etherscan.io']
   },
   {
     name: 'Optimistic Ethereum',
@@ -633,6 +666,7 @@ export const chains: IChainData[] = [
     rpc: [],
     faucets: [],
     infoURL: 'https://optimism.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Athereum',
@@ -645,6 +679,7 @@ export const chains: IChainData[] = [
     rpc: ['https://ava.network:21015/ext/evm/rpc'],
     faucets: ['http://athfaucet.ava.network//?address=${ADDRESS}'],
     infoURL: 'https://athereum.ava.network',
+    blockExplorerUrls: []
   },
   {
     name: 'Energi Testnet',
@@ -657,6 +692,7 @@ export const chains: IChainData[] = [
     rpc: ['https://nodeapi.test3.energi.network'],
     faucets: [],
     infoURL: 'https://www.energi.world/',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethereum Testnet Görli',
@@ -669,13 +705,14 @@ export const chains: IChainData[] = [
     rpc: [
       'https://rpc.goerli.mudit.blog/',
       'https://rpc.slock.it/goerli ',
-      'https://goerli.prylabs.net/',
+      'https://goerli.prylabs.net/'
     ],
     faucets: [
       'https://goerli-faucet.slock.it/?address=${ADDRESS}',
-      'https://faucet.goerli.mudit.blog',
+      'https://faucet.goerli.mudit.blog'
     ],
     infoURL: 'https://goerli.net/#about',
+    blockExplorerUrls: ['https://goerli.etherscan.io']
   },
   {
     name: 'Binance Smart Chain Mainnet',
@@ -687,7 +724,7 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Binance Chain Native Token',
       symbol: 'BNB',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [
       'https://bsc-dataseed1.binance.org',
@@ -702,10 +739,11 @@ export const chains: IChainData[] = [
       'https://bsc-dataseed2.ninicoin.io',
       'https://bsc-dataseed3.ninicoin.io',
       'https://bsc-dataseed4.ninicoin.io',
-      'wss://bsc-ws-node.nariox.org',
+      'wss://bsc-ws-node.nariox.org'
     ],
     faucets: [],
     infoURL: 'https://www.binance.org',
+    blockExplorerUrls: ['https://bscscan.com/']
   },
   {
     name: 'Ethereum Classic Testnet Kotti',
@@ -718,6 +756,7 @@ export const chains: IChainData[] = [
     rpc: [],
     faucets: [],
     infoURL: 'https://explorer.jade.builders/?network=kotti',
+    blockExplorerUrls: []
   },
   {
     name: 'GoChain',
@@ -730,6 +769,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.gochain.io'],
     faucets: [],
     infoURL: 'https://gochain.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethereum Classic Mainnet',
@@ -741,11 +781,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Ethereum Classic Ether',
       symbol: 'ETC',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://ethereumclassic.network'],
     faucets: [],
     infoURL: 'https://ethereumclassic.org',
+    blockExplorerUrls: []
   },
   {
     name: 'Aquachain',
@@ -758,6 +799,7 @@ export const chains: IChainData[] = [
     rpc: ['https://c.onical.org', 'https://tx.aquacha.in/api'],
     faucets: ['https://aquacha.in/faucet'],
     infoURL: 'https://aquachain.github.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethereum Classic Testnet Morden',
@@ -769,11 +811,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Ethereum Classic Testnet Ether',
       symbol: 'TETC',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [],
     faucets: [],
     infoURL: 'https://ethereumclassic.org',
+    blockExplorerUrls: []
   },
   {
     name: 'Ethereum Classic Testnet Mordor',
@@ -785,11 +828,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Mordor Classic Testnet Ether',
       symbol: 'METC',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [],
     faucets: [],
     infoURL: 'https://github.com/eth-classic/mordor/',
+    blockExplorerUrls: []
   },
   {
     name: 'Ellaism',
@@ -802,6 +846,7 @@ export const chains: IChainData[] = [
     rpc: ['https://jsonrpc.ellaism.org'],
     faucets: [],
     infoURL: 'https://ellaism.org',
+    blockExplorerUrls: []
   },
   {
     name: 'ThaiChain',
@@ -814,6 +859,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.dome.cloud'],
     faucets: [],
     infoURL: 'https://thaichain.io',
+    blockExplorerUrls: []
   },
   {
     name: 'Energy Web Volta Testnet',
@@ -823,12 +869,10 @@ export const chains: IChainData[] = [
     network: 'testnet',
     networkId: 73799,
     nativeCurrency: { name: 'Volta Token', symbol: 'VT', decimals: 18 },
-    rpc: [
-      'https://volta-rpc.energyweb.org',
-      'wss://volta-rpc.energyweb.org/ws',
-    ],
+    rpc: ['https://volta-rpc.energyweb.org', 'wss://volta-rpc.energyweb.org/ws'],
     faucets: ['https://voltafaucet.energyweb.org'],
     infoURL: 'https://energyweb.org',
+    blockExplorerUrls: []
   },
   {
     name: 'Mix',
@@ -841,6 +885,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc2.mix-blockchain.org:8647'],
     faucets: [],
     infoURL: 'https://mix-blockchain.org',
+    blockExplorerUrls: []
   },
   {
     name: 'POA Network Sokol',
@@ -853,10 +898,11 @@ export const chains: IChainData[] = [
     rpc: [
       'https://sokol.poa.network',
       'wss://sokol.poa.network/wss',
-      'ws://sokol.poa.network:8546',
+      'ws://sokol.poa.network:8546'
     ],
     faucets: ['https://faucet-sokol.herokuapp.com'],
     infoURL: 'https://poa.network',
+    blockExplorerUrls: ['https://blockscout.com/poa/sokol']
   },
   {
     name: 'Musicoin',
@@ -869,6 +915,7 @@ export const chains: IChainData[] = [
     rpc: ['https://mewapi.musicoin.tw'],
     faucets: [],
     infoURL: 'https://musicoin.tw',
+    blockExplorerUrls: []
   },
   {
     name: 'Firenze test network',
@@ -881,6 +928,7 @@ export const chains: IChainData[] = [
     rpc: ['https://ethnode.primusmoney.com/firenze'],
     faucets: [],
     infoURL: 'https://primusmoney.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Ubiq Network Mainnet',
@@ -893,6 +941,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc.octano.dev', 'https://pyrus2.ubiqscan.io'],
     faucets: [],
     infoURL: 'https://ubiqsmart.com',
+    blockExplorerUrls: []
   },
   {
     name: 'Matic Mumbai',
@@ -905,6 +954,7 @@ export const chains: IChainData[] = [
     rpc: ['https://rpc-mumbai.matic.today', 'wss://ws-mumbai.matic.today'],
     faucets: ['https://faucet.matic.network/'],
     infoURL: 'https://matic.network/',
+    blockExplorerUrls: ['https://explorer-mumbai.maticvigil.com']
   },
   {
     name: 'Callisto Mainnet',
@@ -916,11 +966,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Callisto Mainnet Ether',
       symbol: 'CLO',
-      decimals: 18,
+      decimals: 18
     },
     rpc: ['https://clo-geth.0xinfra.com'],
     faucets: [],
     infoURL: 'https://callisto.network',
+    blockExplorerUrls: []
   },
   {
     name: 'Callisto Testnet',
@@ -932,11 +983,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Callisto Testnet Ether',
       symbol: 'TCLO',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [],
     faucets: [],
     infoURL: 'https://callisto.network',
+    blockExplorerUrls: []
   },
   {
     name: 'TomoChain',
@@ -949,6 +1001,7 @@ export const chains: IChainData[] = [
     rpc: ['https://core.tomocoin.io'],
     faucets: [],
     infoURL: 'https://tomocoin.io',
+    blockExplorerUrls: []
   },
   {
     name: 'bloxberg',
@@ -961,6 +1014,7 @@ export const chains: IChainData[] = [
     rpc: ['https://core.bloxberg.org'],
     faucets: ['https://faucet.bloxberg.org/'],
     infoURL: 'https://bloxberg.org',
+    blockExplorerUrls: []
   },
   {
     name: 'Ubiq Network Testnet',
@@ -972,11 +1026,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Ubiq Testnet Ether',
       symbol: 'TUBQ',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [],
     faucets: [],
     infoURL: 'https://ethersocial.org',
+    blockExplorerUrls: []
   },
   {
     name: 'Binance Smart Chain Testnet',
@@ -988,7 +1043,7 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Binance Chain Native Token',
       symbol: 'BNB',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [
       'https://data-seed-prebsc-1-s1.binance.org:8545',
@@ -996,10 +1051,11 @@ export const chains: IChainData[] = [
       'https://data-seed-prebsc-1-s2.binance.org:8545',
       'https://data-seed-prebsc-2-s2.binance.org:8545',
       'https://data-seed-prebsc-1-s3.binance.org:8545',
-      'https://data-seed-prebsc-2-s3.binance.org:8545',
+      'https://data-seed-prebsc-2-s3.binance.org:8545'
     ],
     faucets: ['https://testnet.binance.org/faucet-smart'],
     infoURL: 'https://testnet.binance.org/',
+    blockExplorerUrls: ['https://testnet.bscscan.com']
   },
   {
     name: 'Nepal Blockchain Network',
@@ -1011,14 +1067,12 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'Nepal Blockchain Network Ether',
       symbol: 'YETI',
-      decimals: 18,
+      decimals: 18
     },
-    rpc: [
-      'https://api.nepalblockchain.dev',
-      'https://api.nepalblockchain.network',
-    ],
+    rpc: ['https://api.nepalblockchain.dev', 'https://api.nepalblockchain.network'],
     faucets: ['https://faucet.nepalblockchain.network'],
     infoURL: 'https://nepalblockchain.network',
+    blockExplorerUrls: []
   },
   {
     name: 'POA Network Core',
@@ -1030,15 +1084,16 @@ export const chains: IChainData[] = [
     nativeCurrency: {
       name: 'POA Network Core Ether',
       symbol: 'SKL',
-      decimals: 18,
+      decimals: 18
     },
     rpc: [
       'https://core.poanetwork.dev',
       'http://core.poanetwork.dev:8545',
       'https://core.poa.network',
-      'ws://core.poanetwork.dev:8546',
+      'ws://core.poanetwork.dev:8546'
     ],
     faucets: [],
     infoURL: 'https://poa.network',
-  },
-];
+    blockExplorerUrls: ['https://blockscout.com/poa/core']
+  }
+]

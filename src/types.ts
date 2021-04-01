@@ -1,16 +1,30 @@
 export interface IChainData {
-  name: string;
-  chainId: number;
-  shortName: string;
-  chain: string;
-  network: string;
-  networkId: number;
+  name: string
+  chainId: number
+  shortName: string
+  chain: string
+  network: string
+  networkId: number
   nativeCurrency: {
-    name: string;
-    symbol: string;
-    decimals: number;
-  };
-  rpc: string[];
-  faucets: string[];
-  infoURL: string;
+    name: string
+    symbol: string
+    decimals: number
+  }
+  rpc: string[]
+  faucets: string[]
+  infoURL: string
+  blockExplorerUrls: string[]
+}
+
+export interface IAddEthereumChainParameter {
+  chainId: string // A 0x-prefixed hexadecimal string
+  chainName: string
+  nativeCurrency: {
+    name: string
+    symbol: string // 2-6 characters long
+    decimals: number
+  }
+  rpcUrls: string[]
+  blockExplorerUrls?: string[]
+  iconUrls?: string[] // Currently ignored.
 }
