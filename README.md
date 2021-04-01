@@ -39,6 +39,11 @@ import XDaiLogo from '@pooltogether/evm-chains-extended/dist/umd/images/xdai-log
 
 If anyone knows how to change this syntax to simply `import XDaiLogo from '@pooltogether/evm-chains-extended'` hit us up!
 
+```jsx
+// then:
+<img src={XDaiLogo} />
+```
+
 ## Types
 
 ```typescript
