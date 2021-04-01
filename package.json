@@ -14,6 +14,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.ts",
   "unpkg": "dist/umd/index.min.js",
