@@ -25,6 +25,20 @@ function convertChainIdToNetworkId(chainId: number): number;
 function formatNetworkForAddEthereumChain(network: IChainData): IAddEthereumChainParameter;
 ```
 
+## Logos
+
+To use network logos import into your dapp:
+
+```typescript
+import BscLogo from '@pooltogether/evm-chains-extended/dist/umd/images/bsc-logo.png'
+import BscLogo2 from '@pooltogether/evm-chains-extended/dist/umd/images/bsc-logo-2.png'
+import PoALogo from '@pooltogether/evm-chains-extended/dist/umd/images/poa-logo.png'
+import PolygonLogo from '@pooltogether/evm-chains-extended/dist/umd/images/polygon-matic-logo.png'
+import XDaiLogo from '@pooltogether/evm-chains-extended/dist/umd/images/xdai-logo.png'
+```
+
+If anyone knows how to change this syntax to simply `import XDaiLogo from '@pooltogether/evm-chains-extended'` hit us up!
+
 ## Types
 
 ```typescript
