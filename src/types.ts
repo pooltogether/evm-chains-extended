@@ -1,4 +1,9 @@
-export interface IChainData {
+export interface IChainExtraData {
+  blockExplorerUrls: string[]
+  chainId: number
+}
+
+export interface IChainDataExtended {
   name: string
   chainId: number
   shortName: string

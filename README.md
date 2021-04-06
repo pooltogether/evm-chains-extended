@@ -30,11 +30,12 @@ function formatNetworkForAddEthereumChain(network: IChainData): IAddEthereumChai
 To use network logos import into your dapp:
 
 ```typescript
-import EthLogo from '@pooltogether/evm-chains-extended/dist/umd/images/eth-logo.png'
-import BscLogo from '@pooltogether/evm-chains-extended/dist/umd/images/bsc-logo.png'
+import EthLogo from '@pooltogether/evm-chains-extended/dist/umd/images/ethereum-icon.png'
+import BscLogo from '@pooltogether/evm-chains-extended/dist/umd/images/binance-smart-chain-icon.png'
 import BscLogo2 from '@pooltogether/evm-chains-extended/dist/umd/images/bsc-logo-2.png'
-import PoALogo from '@pooltogether/evm-chains-extended/dist/umd/images/poa-logo.png'
-import PolygonLogo from '@pooltogether/evm-chains-extended/dist/umd/images/polygon-matic-logo.png'
+import OptimismLogo from '@pooltogether/evm-chains-extended/dist/umd/images/optimism-icon.png'
+import PoALogo from '@pooltogether/evm-chains-extended/dist/umd/images/poa-icon.png'
+import PolygonLogo from '@pooltogether/evm-chains-extended/dist/umd/images/polygon-icon.png'
 import XDaiLogo from '@pooltogether/evm-chains-extended/dist/umd/images/xdai-logo.png'
 ```
 
