@@ -1,10 +1,12 @@
-# evm-chains
+# evm-chains-extended
 
 Package to query chain data from [ethereum-lists/chains](https://github.com/ethereum-lists/chains) with extended data necessary for EIP3085.
 
 Makes use of Pedro Gomes' [evm-chains](https://github.com/pedrouid/evm-chains) package for the initial data, then merges in the extended data.
 
 Includes Block Explorer URLs and network logos for certain networks.
+
+NOTE: This also makes use of a silent interface pattern where missing networks will be returned undefined instead of throwing.
 
 ## Install
 
@@ -42,8 +44,6 @@ import PoALogo from '@pooltogether/evm-chains-extended/dist/umd/images/poa-icon.
 import PolygonLogo from '@pooltogether/evm-chains-extended/dist/umd/images/polygon-icon.png'
 import XDaiLogo from '@pooltogether/evm-chains-extended/dist/umd/images/xdai-logo.png'
 ```
-
-If anyone knows how to change this syntax to simply `import XDaiLogo from '@pooltogether/evm-chains-extended'` hit us up!
 
 ```jsx
 // then:
