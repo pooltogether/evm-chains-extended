@@ -1,17 +1,15 @@
-import * as evmChains from '../src'
+import * as evmChainsExtended from '../src'
 
-describe('evm-chains', () => {
-  it('getChain', () => {
-    const chain = evmChains.getChain(1)
+describe('evm-chains-extended', () => {
+  it('aliases getChain and appends blockExplorerUrl data', () => {
+    const chain = evmChainsExtended.getChain(1)
     expect(chain.name).toEqual('Ethereum Mainnet')
-    expect(chain.chainId).toEqual(1)
-    expect(chain.shortName).toEqual('eth')
-    expect(chain.chain).toEqual('ETH')
-    expect(chain.network).toEqual('mainnet')
-    expect(chain.networkId).toEqual(1)
-    expect(chain.nativeCurrency.name).toEqual('Ether')
-    expect(chain.nativeCurrency.symbol).toEqual('ETH')
-    expect(chain.nativeCurrency.decimals).toEqual(18)
-    expect(chain.infoURL).toEqual('https://ethereum.org')
+    expect(chain.blockExplorerUrls).toEqual(['https://etherscan.io'])
+  })
+
+  it('aliases getAllChains and appends extra datas', () => {
+    const chains = evmChainsExtended.getAllChains()
+    expect(chains[0].name).toEqual('Ethereum Mainnet')
+    expect(chains[0].blockExplorerUrls).toEqual(['https://etherscan.io'])
   })
 })
