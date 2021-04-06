@@ -1,28 +1,32 @@
 # evm-chains
 
-Package to query chain data from [ethereum-lists/chains](https://github.com/ethereum-lists/chains) with extended data for EIP3085 including Block Explorer URLs and network logos.
+Package to query chain data from [ethereum-lists/chains](https://github.com/ethereum-lists/chains) with extended data necessary for EIP3085.
+
+Makes use of Pedro Gomes' [evm-chains](https://github.com/pedrouid/evm-chains) package for the initial data, then merges in the extended data.
+
+Includes Block Explorer URLs and network logos for certain networks.
 
 ## Install
 
 ```sh
-npm install --save evm-chains
+npm install --save evm-chains-extended
 
 #or
 
-yarn add evm-chains
+yarn add evm-chains-extended
 ```
 
 ## API
 
 ```typescript
-function getAllChains(): IChainData[];
-function getChain(chainId: number): IChainData;
-function getChainByChainId(chainId: number): IChainData;
-function getChainByKeyValue(key: string, value: any): IChainData;
-function getChainByNetworkId(networkId: number): IChainData;
-function convertNetworkIdToChainId(networkId: number): number;
-function convertChainIdToNetworkId(chainId: number): number;
-function formatNetworkForAddEthereumChain(network: IChainData): IAddEthereumChainParameter;
+function getAllChains(): IChainDataExtended[] | undefined;
+function getChain(chainId: number): IChainDataExtended | undefined;
+function getChainByChainId(chainId: number): IChainDataExtended | undefined;
+function getChainByKeyValue(key: string, value: any): IChainDataExtended | undefined;
+function getChainByNetworkId(networkId: number): IChainDataExtended | undefined;
+function convertNetworkIdToChainId(networkId: number): number | undefined;
+function convertChainIdToNetworkId(chainId: number): number | undefined;
+function formatNetworkForAddEthereumChain(network: IChainDataExtended): IAddEthereumChainParameter;
 ```
 
 ## Logos
@@ -48,7 +52,7 @@ If anyone knows how to change this syntax to simply `import XDaiLogo from '@pool
 ## Types
 
 ```typescript
-interface IChainData {
+interface IChainDataExtended {
   name: string;
   chainId: number;
   shortName: string;
@@ -63,6 +67,7 @@ interface IChainData {
   rpc: string[];
   faucets: string[];
   infoURL: string;
+  blockExplorerUrls: string[]
 }
 
 // format for EIP3085 wallet_addEthereumChain
