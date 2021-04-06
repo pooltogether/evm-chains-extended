@@ -11,9 +11,7 @@ export function getAllChains(): IChainDataExtended[] | undefined {
 
   try {
     allChains = mergeArrays(upstreamGetAllChains(), chainsExtraData)
-  } catch (e) {
-    console.warn('could not merge arrays for all chains', e)
-  }
+  } catch (e) {}
 
   return allChains
 }
@@ -25,9 +23,7 @@ export function getChain(chainId: number): IChainDataExtended {
     const chainUpstream = upstreamGetChain(chainId)
     const chainExtended = chainsExtraData.find((x) => x.chainId === chainId)
     chain = { ...chainUpstream, ...chainExtended }
-  } catch (e) {
-    console.warn('could not merge data for chain with id: ', chainId, e)
-  }
+  } catch (e) {}
 
   return chain
 }
