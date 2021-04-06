@@ -24,10 +24,6 @@ yarn add evm-chains-extended
 function getAllChains(): IChainDataExtended[] | undefined;
 function getChain(chainId: number): IChainDataExtended | undefined;
 function getChainByChainId(chainId: number): IChainDataExtended | undefined;
-function getChainByKeyValue(key: string, value: any): IChainDataExtended | undefined;
-function getChainByNetworkId(networkId: number): IChainDataExtended | undefined;
-function convertNetworkIdToChainId(networkId: number): number | undefined;
-function convertChainIdToNetworkId(chainId: number): number | undefined;
 function formatNetworkForAddEthereumChain(network: IChainDataExtended): IAddEthereumChainParameter;
 ```
 
