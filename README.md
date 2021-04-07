@@ -6,6 +6,8 @@ Makes use of Pedro Gomes' [evm-chains](https://github.com/pedrouid/evm-chains) p
 
 Includes Block Explorer URLs and network logos for certain networks.
 
+This package is meant as a holdover and may be deprecated in the future in favor of simply using `evm-chains`. That is dependent on EIPs such as: https://github.com/ethereum/EIPs/pull/3091
+
 NOTE: This also makes use of a silent interface pattern where missing networks will be returned undefined instead of throwing.
 
 ## Install
