@@ -1,6 +1,6 @@
 {
   "name": "@pooltogether/evm-chains-extended",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Package to get chain data from ethereum-lists/chains with extra data such as blockExplorerUrls",
   "author": "Chuck Bergeron <chuck@pooltogether.com>",
   "license": "MIT",

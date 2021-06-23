@@ -58,7 +58,7 @@ export const chainsExtraData: IChainExtraData[] = [
     chainId: 13371337
   },
   {
-    blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com'],
+    blockExplorerUrls: ['https://polygonscan.com'],
     chainId: 137
   },
   {
