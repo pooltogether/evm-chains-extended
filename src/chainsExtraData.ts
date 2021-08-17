@@ -292,5 +292,9 @@ export const chainsExtraData: IChainExtraData[] = [
   {
     blockExplorerUrls: ['https://blockscout.com/poa/core'],
     chainId: 99
+  },
+  {
+    blockExplorerUrls: [],
+    chainId: 31337
   }
 ]
