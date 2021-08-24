@@ -1,23 +1,11 @@
+import { IChainData } from 'evm-chains'
+
 export interface IChainExtraData {
-  blockExplorerUrls: string[]
   chainId: number
+  blockExplorerUrls: string[]
 }
 
-export interface IChainDataExtended {
-  name: string
-  chainId: number
-  shortName: string
-  chain: string
-  network: string
-  networkId: number
-  nativeCurrency: {
-    name: string
-    symbol: string
-    decimals: number
-  }
-  rpc: string[]
-  faucets: string[]
-  infoURL: string
+export interface IChainDataExtended extends IChainData, IChainExtraData {
   blockExplorerUrls: string[]
 }
 

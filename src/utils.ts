@@ -1,17 +1,39 @@
-import { getAllChains as upstreamGetAllChains, getChain as upstreamGetChain } from 'evm-chains'
+import { IChainData, getAllChains as upstreamGetAllChains } from 'evm-chains'
 import { chainsExtraData } from './chainsExtraData'
+import { additionalChains } from './additionalChains'
 import { IChainDataExtended, IAddEthereumChainParameter } from './types'
 
-const mergeArrays = (arrayOne, arrayTwo) => {
-  return arrayOne.map((item, i) => Object.assign({}, item, arrayTwo[i]))
+const mergeArrays = (params: {
+  mergeArray: Array<any>
+  existingArray: Array<any>
+  matchKey: string
+}) => {
+  const { mergeArray, existingArray, matchKey } = params
+
+  return mergeArray.map((mergeArrayItem) => {
+    const match = existingArray.find(
+      (existingArrayItem) => existingArrayItem[matchKey] === mergeArrayItem[matchKey]
+    )
+    if (match) {
+      return Object.assign(mergeArrayItem, match)
+    }
+    return mergeArrayItem
+  })
 }
 
-export function getAllChains(): IChainDataExtended[] | undefined {
-  let allChains: IChainDataExtended[] | undefined
+export function getAllChains(): IChainDataExtended[] {
+  let allChains: IChainDataExtended[] = []
 
   try {
-    allChains = mergeArrays(upstreamGetAllChains(), chainsExtraData)
-  } catch (e) {}
+    const chainsData: IChainData[] = upstreamGetAllChains().concat(additionalChains)
+    allChains = mergeArrays({
+      mergeArray: chainsData,
+      existingArray: chainsExtraData,
+      matchKey: 'chainId'
+    })
+  } catch (e) {
+    console.warn(e)
+  }
 
   return allChains
 }
@@ -20,10 +42,11 @@ export function getChain(chainId: number): IChainDataExtended {
   let chain
 
   try {
-    const chainUpstream = upstreamGetChain(chainId)
-    const chainExtended = chainsExtraData.find((x) => x.chainId === chainId)
-    chain = { ...chainUpstream, ...chainExtended }
-  } catch (e) {}
+    const chains = getAllChains()
+    chain = chains.find((x) => x.chainId === chainId)
+  } catch (e) {
+    console.warn(e)
+  }
 
   return chain
 }

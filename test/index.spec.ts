@@ -12,4 +12,10 @@ describe('evm-chains-extended', () => {
     expect(chains?.[0].name).toEqual('Ethereum Mainnet')
     expect(chains?.[0].blockExplorerUrls).toEqual(['https://etherscan.io'])
   })
+
+  it('returns celo alfajores from additionalChains', () => {
+    const chain = evmChainsExtended.getChain(44787)
+    expect(chain.name).toEqual('Celo Alfajores Testnet')
+    expect(chain.blockExplorerUrls).toEqual(['https://alfajores-blockscout.celo-testnet.org'])
+  })
 })
