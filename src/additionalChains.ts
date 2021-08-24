@@ -15,5 +15,17 @@ export const additionalChains: IChainData[] = [
       'https://cauldron.pretoriaresearchlab.io/alfajores-faucet'
     ],
     infoURL: 'https://docs.celo.org/'
+  },
+  {
+    name: 'Celo',
+    chainId: 42220,
+    shortName: 'CELO',
+    chain: 'CELO',
+    network: 'celo',
+    networkId: 42220,
+    nativeCurrency: { name: 'Celo', symbol: 'CELO', decimals: 18 },
+    rpc: ['https://forno.celo.org'],
+    faucets: [],
+    infoURL: 'https://docs.celo.org/'
   }
 ]

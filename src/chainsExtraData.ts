@@ -300,5 +300,9 @@ export const chainsExtraData: IChainExtraData[] = [
   {
     blockExplorerUrls: ['https://alfajores-blockscout.celo-testnet.org'],
     chainId: 44787
+  },
+  {
+    blockExplorerUrls: ['https://explorer.celo.org'],
+    chainId: 42220
   }
 ]
