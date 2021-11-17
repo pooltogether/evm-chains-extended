@@ -58,6 +58,14 @@ export const chainsExtraData: IChainExtraData[] = [
     chainId: 13371337
   },
   {
+    rpc: [
+      'https://polygon-rpc.com/',
+      'https://rpc-mainnet.matic.network',
+      'https://matic-mainnet.chainstacklabs.com',
+      'https://rpc-mainnet.maticvigil.com',
+      'https://rpc-mainnet.matic.quiknode.pro',
+      'https://matic-mainnet-full-rpc.bwarelabs.com'
+    ],
     blockExplorerUrls: ['https://polygonscan.com'],
     chainId: 137
   },

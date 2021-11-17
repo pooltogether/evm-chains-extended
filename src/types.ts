@@ -3,9 +3,10 @@ import { IChainData } from 'evm-chains'
 export interface IChainExtraData {
   chainId: number
   blockExplorerUrls: string[]
+  rpc?: string[]
 }
 
-export interface IChainDataExtended extends IChainData, IChainExtraData {
+export interface IChainDataExtended extends IChainData, Omit<IChainExtraData, 'rpc'> {
   blockExplorerUrls: string[]
 }
 
