@@ -25,16 +25,7 @@ const extendChainDataArray = (chainsData: IChainData[], chainsExtraData: IChainE
 }
 
 export function getAllChains(): IChainDataExtended[] {
-  let allChains: IChainDataExtended[] = []
-
-  try {
-    const chainsData: IChainData[] = upstreamGetAllChains().concat(additionalChains)
-    allChains = extendChainDataArray(chainsData, chainsExtraData)
-  } catch (e) {
-    console.warn(e)
-  }
-
-  return allChains
+  return extendChainDataArray(upstreamGetAllChains().concat(additionalChains), chainsExtraData)
 }
 
 export function getChain(chainId: number): IChainDataExtended {
@@ -52,6 +43,10 @@ export function getChain(chainId: number): IChainDataExtended {
 
 export function getChainByChainId(chainId: number): IChainDataExtended {
   return getChain(chainId)
+}
+
+export function getNetworkForEip3085(chainId: number) {
+  return formatNetworkForAddEthereumChain(getChain(chainId))
 }
 
 // format for EIP3085 wallet_addEthereumChain

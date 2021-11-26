@@ -29,7 +29,8 @@
     "url": "https://github.com/pooltogether/evm-chains-extended/issues"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "start": "tsdx watch --onSuccess \"yalc push\"",
+    "reinstall": "rm -rf node_modules && yarn install",
     "clean": "rm -rf dist",
     "build:cjs": "./node_modules/.bin/tsc -p tsconfig.cjs.json",
     "build:umd": "webpack",

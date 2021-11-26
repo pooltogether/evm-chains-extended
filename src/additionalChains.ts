@@ -1,6 +1,7 @@
 import { IChainData } from 'evm-chains'
 
 export const additionalChains: IChainData[] = [
+  // CELO
   {
     name: 'Celo Alfajores Testnet',
     chainId: 44787,
@@ -27,5 +28,30 @@ export const additionalChains: IChainData[] = [
     rpc: ['https://forno.celo.org'],
     faucets: [],
     infoURL: 'https://docs.celo.org/'
+  },
+  // Avalanche
+  {
+    name: 'Avalanche Mainnet C-Chain',
+    chainId: 43114,
+    shortName: 'AVAX',
+    chain: 'AVAX',
+    network: 'mainnet',
+    networkId: 43114,
+    nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
+    rpc: ['https://api.avax.network/ext/bc/C/rpc'],
+    faucets: [],
+    infoURL: 'https://docs.avax.network/'
+  },
+  {
+    name: 'Avalanche FUJI C-Chain',
+    chainId: 43113,
+    shortName: 'AVAX',
+    chain: 'AVAX',
+    network: 'testnet',
+    networkId: 43113,
+    nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
+    rpc: ['https://api.avax-test.network/ext/bc/C/rpc'],
+    faucets: [],
+    infoURL: 'https://docs.avax.network/'
   }
 ]
