@@ -45,7 +45,7 @@ export const additionalChains: IChainData[] = [
   {
     name: 'Avalanche FUJI C-Chain',
     chainId: 43113,
-    shortName: 'AVAX',
+    shortName: 'FUJI',
     chain: 'AVAX',
     network: 'testnet',
     networkId: 43113,
