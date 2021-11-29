@@ -305,6 +305,7 @@ export const chainsExtraData: IChainExtraData[] = [
     blockExplorerUrls: [],
     chainId: 31337
   },
+  // CELO
   {
     blockExplorerUrls: ['https://alfajores-blockscout.celo-testnet.org'],
     chainId: 44787
@@ -320,5 +321,13 @@ export const chainsExtraData: IChainExtraData[] = [
   {
     blockExplorerUrls: ['https://kovan-optimistic.etherscan.io'],
     chainId: 69
+  },
+  {
+    blockExplorerUrls: ['https://snowtrace.io/'],
+    chainId: 43114
+  },
+  {
+    blockExplorerUrls: ['https://testnet.snowtrace.io/'],
+    chainId: 43113
   }
 ]
