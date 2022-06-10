@@ -312,5 +312,13 @@ export const chainsExtraData: IChainExtraData[] = [
   {
     blockExplorerUrls: ['https://explorer.celo.org'],
     chainId: 42220
+  },
+  {
+    blockExplorerUrls: ['https://optimistic.etherscan.io'],
+    chainId: 10
+  },
+  {
+    blockExplorerUrls: ['https://kovan-optimistic.etherscan.io'],
+    chainId: 69
   }
 ]
