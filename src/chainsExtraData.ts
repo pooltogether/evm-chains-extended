@@ -6,6 +6,11 @@ export const chainsExtraData: IChainExtraData[] = [
     chainId: 1
   },
   {
+    rpc: [
+      'https://rpc.gnosischain.com/',
+      'https://xdai-rpc.gateway.pokt.network',
+      'https://rpc.ankr.com/gnosis'
+    ],
     blockExplorerUrls: ['https://blockscout.com/xdai/mainnet'],
     chainId: 100
   },
