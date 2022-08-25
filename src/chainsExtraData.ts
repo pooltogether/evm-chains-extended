@@ -196,10 +196,6 @@ export const chainsExtraData: IChainExtraData[] = [
   },
   {
     blockExplorerUrls: [],
-    chainId: 420
-  },
-  {
-    blockExplorerUrls: [],
     chainId: 43110
   },
   {
