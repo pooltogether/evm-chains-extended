@@ -66,17 +66,5 @@ export const additionalChains: IChainData[] = [
     rpc: ['https://mainnet.optimism.ioc'],
     faucets: [],
     infoURL: 'https://community.optimism.io/docs/'
-  },
-  {
-    name: 'Optimism-Kovan Testnet',
-    chainId: 69,
-    shortName: 'OPKOVAN',
-    chain: 'OPKOVAN',
-    network: 'testnet',
-    networkId: 69,
-    nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
-    rpc: ['https://kovan.optimism.io'],
-    faucets: [],
-    infoURL: 'https://community.optimism.io/docs/'
   }
 ]
