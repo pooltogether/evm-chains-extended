@@ -196,10 +196,6 @@ export const chainsExtraData: IChainExtraData[] = [
   },
   {
     blockExplorerUrls: [],
-    chainId: 420
-  },
-  {
-    blockExplorerUrls: [],
     chainId: 43110
   },
   {
@@ -324,8 +320,16 @@ export const chainsExtraData: IChainExtraData[] = [
     chainId: 10
   },
   {
-    blockExplorerUrls: ['https://kovan-optimistic.etherscan.io'],
-    chainId: 69
+    blockExplorerUrls: ['https://blockscout.com/optimism/goerli'],
+    chainId: 420
+  },
+  {
+    blockExplorerUrls: ['https://arbiscan.io'],
+    chainId: 42161
+  },
+  {
+    blockExplorerUrls: ['https://goerli-rollup-explorer.arbitrum.io'],
+    chainId: 421613
   },
   {
     blockExplorerUrls: ['https://snowtrace.io/'],
